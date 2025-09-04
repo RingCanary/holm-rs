@@ -1,6 +1,9 @@
-[package]
-name = "holm-rs"
-version = "0.1.0"
-edition = "2024"
+[workspace]
+members = [
+    # Add chapter crates here as you create them
+    "chapters/ch02_tokens", "chapters/ch04_lmstudio_api",
+]
+resolver = "2"
 
-[dependencies]
+[workspace.package]
+edition = "2024"
