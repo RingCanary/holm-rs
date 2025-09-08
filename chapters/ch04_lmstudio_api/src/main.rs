@@ -95,7 +95,7 @@ fn main() -> Result<()> {
 
     println!("Classifying text with LM Studio...");
     println!("Labels: {:?}", labels);
-    println!("Text: {}\n", text);
+    println!("Text: {text}\n");
 
     match classify(text, &labels) {
         Ok(out) => {
