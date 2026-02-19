@@ -16,4 +16,10 @@ Hands-On Language Models in Rust — an educational, chapter-based workspace exp
 
 ## Docs for Contributors
 
-See `AGENTS.md` for full guidance on workspace layout, commands, adding chapters, and LM Studio details.
+- **AGENTS.md** — Quick reference for common commands and workflows
+- **docs/contributor_guide.md** — Full guidance on setup, project structure, adding chapters, and troubleshooting
+
+## Learning Notes
+
+- `docs/research/microgpt_notes.md` — Scratchpad for microGPT/nanoGPT follow-along notes
+- `docs/research/trends_links.md` — Living watchlist for papers, talks, and tools
