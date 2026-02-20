@@ -1,7 +1,7 @@
 [workspace]
 members = [
     # Add chapter crates here as you create them
-    "chapters/ch02_tokens", "chapters/ch04_lmstudio_api", "chapters/ch05_microgpt",
+    "chapters/ch02_tokens", "chapters/ch04_lmstudio_api", "chapters/ch05_microgpt", "chapters/ch06_rwkv",
 ]
 resolver = "2"
 
