@@ -10,6 +10,7 @@ A living document for tracking high-signal LLM research, talks, and tools.
 |------------|-------|------|----------|-------|
 | 2026-02-19 | Attention Is All You Need | [arXiv:1706.03762](https://arxiv.org/abs/1706.03762) | Foundation | Original transformer |
 | 2026-02-19 | GPT-3 Paper | [arXiv:2005.14165](https://arxiv.org/abs/2005.14165) | Foundation | Scaling laws, few-shot |
+| 2026-02-20 | Geometric Manifold Rectification | [arXiv:2602.13045](https://arxiv.org/abs/2602.13045) | High | Imbalanced learning, data cleaning |
 | TODO | - | - | - | - |
 
 <!-- TODO: Add recent papers as discovered -->
@@ -22,6 +23,7 @@ A living document for tracking high-signal LLM research, talks, and tools.
 |------------|-------|---------|------|---------|
 | 2026-02-19 | Let's build GPT | Andrej Karpathy | [YouTube](https://www.youtube.com/watch?v=kCc8FmEb1nY) | [ ] |
 | 2026-02-19 | The spelled-out intro to LLMs | Andrej Karpathy | [YouTube](https://www.youtube.com/watch?v=zjkBMFhNj_g) | [ ] |
+| 2026-02-20 | Basin Repair Surgery (GMR) | - | [YouTube](https://youtu.be/8ihN1ToYtGo) | [ ] |
 | TODO | - | - | - | [ ] |
 
 <!-- TODO: Add talks from ICML, NeurIPS, company keynotes -->
