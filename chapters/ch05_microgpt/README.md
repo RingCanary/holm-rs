@@ -41,11 +41,11 @@ Non-zero transitions: 142/1225 (11.6%)
 hello world the quick brown fox jumps over the lazy dog a language...
 ```
 
-## GMR Cleaner Script
+## GMR Cleaner Binary
 
 ### What it does
 
-The `gmr_clean.py` script implements **Geometric Manifold Rectification (GMR)**
+The `gmr_clean` binary implements **Geometric Manifold Rectification (GMR)**
 as a corpus-cleaning stage before training:
 
 - **bytes_tokens**: byte-level tokenization
@@ -60,24 +60,24 @@ as a corpus-cleaning stage before training:
 - `beta=0.7`: minority embedding threshold
 - `gamma=0.1`: minority removal budget fraction
 
-### Running the script
+### Running the binary
 
 ```bash
 # Basic usage
-python chapters/ch05_microgpt/scripts/gmr_clean.py \
+cargo run -p ch05_microgpt --bin gmr_clean -- \
   --docs docs.txt \
   --labels labels.txt \
   --output input_clean.txt
 
 # With custom parameters
-python chapters/ch05_microgpt/scripts/gmr_clean.py \
+cargo run -p ch05_microgpt --bin gmr_clean -- \
   --docs docs.txt \
   --labels labels.txt \
   --output cleaned.txt \
   --k 20 --alpha 0.4 --beta 0.6 --gamma 0.1 --metric cosine
 
 # View help
-python chapters/ch05_microgpt/scripts/gmr_clean.py --help
+cargo run -p ch05_microgpt --bin gmr_clean -- --help
 ```
 
 ### Input format
@@ -95,7 +95,7 @@ echo -e "The quick brown fox\nHello world\nAI generated text" > docs.txt
 echo -e "1\n0\n0" > labels.txt
 
 # Run GMR cleaner
-python chapters/ch05_microgpt/scripts/gmr_clean.py --docs docs.txt --labels labels.txt --output cleaned.txt
+cargo run -p ch05_microgpt --bin gmr_clean -- --docs docs.txt --labels labels.txt --output cleaned.txt
 
 # View results
 cat cleaned.txt
@@ -107,8 +107,8 @@ cat cleaned.txt
 ch05_microgpt/
 +-- Cargo.toml          # Package manifest (no external deps)
 +-- README.md           # This file
-+-- scripts/
-|   +-- gmr_clean.py    # GMR document cleaner
 +-- src/
     +-- main.rs         # Bigram language model demo
+    +-- bin/
+        +-- gmr_clean.rs  # GMR document cleaner binary
 ```
